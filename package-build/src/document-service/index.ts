@@ -118,7 +118,8 @@ export class DocumentService extends EventEmitter {
   }
 
   private generateDocumentId(): string {
-    return `doc_${Date.now()}_${crypto.randomBytes(8).toString('hex')}`;
+    const random = Math.random().toString(36).substring(2, 10);
+    return `doc_${Date.now()}_${random}`;
   }
 
   private async calculateChecksum(buffer: Buffer): Promise<string> {

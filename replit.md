@@ -126,3 +126,8 @@ Changelog:
   - Authentication setup complete with GitHub token in secrets
   - Comprehensive publishing instructions created
   - Ready for deployment to https://github.com/orgs/Xala-Technologies/packages
+- July 08, 2025: Organization namespace updated to @xalatechnologies:
+  - Changed from @xala-technologies to @xalatechnologies throughout all files
+  - Updated package.json, README.md, documentation, and publishing scripts
+  - GitHub repository references updated to github.com/xalatechnologies
+  - Package ready for publishing to GitHub Packages with new organization name

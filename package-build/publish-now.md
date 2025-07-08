@@ -1,4 +1,4 @@
-# 🚀 Ready to Publish: @xala-technologies/document-services
+# 🚀 Ready to Publish: @xalatechnologies/document-services
 
 ## Package Status: ✅ READY FOR PUBLISHING
 
@@ -42,8 +42,8 @@ npm publish
 
 ## What Happens After Publishing
 
-✅ **Package URL**: https://github.com/orgs/Xala-Technologies/packages  
-✅ **Installation**: `npm install @xala-technologies/document-services`  
+✅ **Package URL**: https://github.com/orgs/xalatechnologies/packages  
+✅ **Installation**: `npm install @xalatechnologies/document-services`  
 ✅ **Registry**: Available on GitHub Packages (npm.pkg.github.com)
 
 ## Package Features (Ready to Use)

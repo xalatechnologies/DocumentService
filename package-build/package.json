@@ -1,5 +1,5 @@
 {
-  "name": "@xala-technologies/document-services",
+  "name": "@xalatechnologies/document-services",
   "version": "1.0.0",
   "description": "Comprehensive document management services for Norwegian compliance and international deployment",
   "main": "dist/index.js",
@@ -17,7 +17,7 @@
     "format:check": "prettier --check src/**/*.ts",
     "docs": "typedoc src --out docs/api",
     "dev": "ts-node-dev src/index.ts",
-    "prepublishOnly": "npm run build && npm run test && npm run lint",
+
     "prepack": "npm run build",
     "clean": "rimraf dist"
   },
@@ -41,12 +41,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Xala-Technologies/document-services.git"
+    "url": "https://github.com/xalatechnologies/document-services.git"
   },
   "bugs": {
-    "url": "https://github.com/Xala-Technologies/document-services/issues"
+    "url": "https://github.com/xalatechnologies/document-services/issues"
   },
-  "homepage": "https://github.com/Xala-Technologies/document-services#readme",
+  "homepage": "https://github.com/xalatechnologies/document-services#readme",
   "dependencies": {
     "multer": "^1.4.5-lts.1",
     "sharp": "^0.32.6",

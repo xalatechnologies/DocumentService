@@ -1,4 +1,4 @@
-# Publishing @xala-technologies/document-services to GitHub Packages
+# Publishing @xalatechnologies/document-services to GitHub Packages
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@
 Create a `.npmrc` file in your home directory or project root:
 
 ```bash
-@xala-technologies:registry=https://npm.pkg.github.com
+@xalatechnologies:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
 ```
 
@@ -62,10 +62,10 @@ Once published, users can install the package:
 
 ```bash
 # Add .npmrc to their project
-echo "@xala-technologies:registry=https://npm.pkg.github.com" >> .npmrc
+echo "@xalatechnologies:registry=https://npm.pkg.github.com" >> .npmrc
 
 # Install the package
-npm install @xala-technologies/document-services
+npm install @xalatechnologies/document-services
 ```
 
 ## Norwegian Municipal Usage Example
@@ -75,7 +75,7 @@ import {
   DocumentService, 
   SignatureService, 
   ComplianceService 
-} from '@xala-technologies/document-services';
+} from '@xalatechnologies/document-services';
 
 // Configure for Norwegian municipality
 const config = {

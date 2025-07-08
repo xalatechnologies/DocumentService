@@ -1,4 +1,4 @@
-# @xala-technologies/document-services
+# @xalatechnologies/document-services
 
 [![npm version](https://badge.fury.io/js/%40xala-technologies%2Fdocument-services.svg)](https://badge.fury.io/js/%40xala-technologies%2Fdocument-services)
 [![Build Status](https://github.com/xala-technologies/document-services/workflows/CI/badge.svg)](https://github.com/xala-technologies/document-services/actions)
@@ -26,11 +26,11 @@ A comprehensive TypeScript library for document management with built-in Norwegi
 ## 📦 Installation
 
 ```bash
-npm install @xala-technologies/document-services
+npm install @xalatechnologies/document-services
 ```
 
 ```bash
-yarn add @xala-technologies/document-services
+yarn add @xalatechnologies/document-services
 ```
 
 ## 🚀 Quick Start
@@ -38,7 +38,7 @@ yarn add @xala-technologies/document-services
 ### Basic Document Management
 
 ```typescript
-import { DocumentService } from '@xala-technologies/document-services';
+import { DocumentService } from '@xalatechnologies/document-services';
 
 // Initialize with Norwegian compliance
 const documentService = new DocumentService({
