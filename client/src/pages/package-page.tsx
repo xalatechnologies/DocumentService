@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function PackagePage() {
   const params = useParams();
-  const packageName = params.name || "@xala/document-services";
+  const packageName = params.name || "@xala-technologies/document-services";
 
   const { data: packageData, isLoading, error } = useQuery({
     queryKey: [`/api/packages/${encodeURIComponent(packageName)}`],

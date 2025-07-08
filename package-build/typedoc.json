@@ -1,0 +1,31 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "out": "docs/api",
+  "name": "@xala-technologies/document-services",
+  "theme": "default",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeProtected": false,
+  "excludeExternals": true,
+  "readme": "README.md",
+  "includes": "./src",
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "node_modules/**/*"
+  ],
+  "sort": ["source-order"],
+  "disableSources": false,
+  "sourceLinkTemplate": "https://github.com/xala-technologies/document-services/blob/{gitRevision}/{path}#L{line}",
+  "plugin": [],
+  "hideGenerator": false,
+  "categorizeByGroup": true,
+  "defaultCategory": "Other",
+  "categoryOrder": [
+    "Core Services",
+    "Norwegian Compliance",
+    "International Features", 
+    "Types",
+    "Other"
+  ]
+}

@@ -24,14 +24,14 @@ export class MemStorage implements IStorage {
     this.versions = new Map();
     this.currentId = 1;
     
-    // Initialize with @xala/document-services package
+    // Initialize with @xala-technologies/document-services package
     this.initializeDocumentServicesPackage();
   }
 
   private initializeDocumentServicesPackage() {
     const pkg: Package = {
       id: 1,
-      name: "@xala/document-services",
+      name: "@xala-technologies/document-services",
       version: "1.0.0",
       description: "Comprehensive document management services for Norwegian compliance and international deployment",
       author: "Xala Technologies",
@@ -46,7 +46,6 @@ export class MemStorage implements IStorage {
     
     // Add dependencies
     this.dependencies.set(1, [
-      { name: "@xala/foundation", version: "^1.0.0", type: "dependencies" },
       { name: "multer", version: "^1.4.5-lts.1", type: "dependencies" },
       { name: "sharp", version: "^0.32.6", type: "dependencies" },
       { name: "pdf-lib", version: "^1.17.1", type: "dependencies" },
@@ -88,6 +87,11 @@ export class MemStorage implements IStorage {
     const pkg: Package = {
       ...insertPackage,
       id,
+      description: insertPackage.description || null,
+      author: insertPackage.author || null,
+      license: insertPackage.license || null,
+      keywords: insertPackage.keywords || null,
+      weeklyDownloads: insertPackage.weeklyDownloads || 0,
       createdAt: new Date(),
       updatedAt: new Date(),
     };
