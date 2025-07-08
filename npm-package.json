@@ -1,0 +1,75 @@
+{
+  "name": "@xala/document-services",
+  "version": "1.0.0",
+  "description": "Comprehensive document management services for Norwegian compliance and international deployment",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:compliance": "jest --testNamePattern='Norwegian compliance'",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "format": "prettier --write src/**/*.ts",
+    "docs": "typedoc src --out docs/api",
+    "dev": "ts-node-dev src/index.ts",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "document-management",
+    "norwegian-compliance",
+    "nsm",
+    "gdpr",
+    "archiving",
+    "version-control",
+    "digital-signatures",
+    "bankid",
+    "idporten",
+    "docusign"
+  ],
+  "author": "Xala Technologies",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xala-technologies/document-services.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xala-technologies/document-services/issues"
+  },
+  "homepage": "https://github.com/xala-technologies/document-services#readme",
+  "dependencies": {
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.32.6",
+    "pdf-lib": "^1.17.1",
+    "mammoth": "^1.6.0",
+    "mime-types": "^2.1.35"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/jest": "^29.5.0",
+    "@types/multer": "^1.4.7",
+    "@types/mime-types": "^2.1.1",
+    "typescript": "^5.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node-dev": "^2.0.0",
+    "eslint": "^8.40.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "prettier": "^2.8.8",
+    "typedoc": "^0.24.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
