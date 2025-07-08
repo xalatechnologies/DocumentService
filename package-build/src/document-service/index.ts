@@ -13,7 +13,7 @@ export class DocumentService extends EventEmitter {
   }
 
   async uploadDocument(
-    file: Express.Multer.File,
+    file: any,
     metadata: Partial<DocumentMetadata>
   ): Promise<DocumentMetadata> {
     // Validate file
@@ -105,7 +105,7 @@ export class DocumentService extends EventEmitter {
     this.emit('documentDeleted', metadata);
   }
 
-  private async validateFile(file: Express.Multer.File): Promise<void> {
+  private async validateFile(file: any): Promise<void> {
     // Size validation
     if (file.size > this.config.maxFileSize) {
       throw new Error(`File size exceeds limit: ${file.size} bytes`);
@@ -125,7 +125,7 @@ export class DocumentService extends EventEmitter {
     return crypto.createHash('sha256').update(buffer).digest('hex');
   }
 
-  private async storeFile(file: Express.Multer.File, id: string): Promise<string> {
+  private async storeFile(file: any, id: string): Promise<string> {
     const filePath = this.getStoragePath(id);
     await fs.mkdir(path.dirname(filePath), { recursive: true });
 

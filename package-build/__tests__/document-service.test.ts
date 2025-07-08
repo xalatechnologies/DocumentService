@@ -31,7 +31,7 @@ describe('DocumentService', () => {
         mimetype: 'application/pdf',
         size: 1024,
         buffer: Buffer.from('test content')
-      } as Express.Multer.File;
+      } as any;
 
       const metadata = {
         classification: 'INTERNAL' as const,
@@ -134,7 +134,7 @@ describe('DocumentService', () => {
         mimetype: 'application/pdf',
         size: 1024,
         buffer: Buffer.from('tenant content')
-      } as Express.Multer.File;
+      } as any;
 
       // Mock the private methods
       jest.spyOn(documentService as any, 'validateFile').mockResolvedValue(undefined);
